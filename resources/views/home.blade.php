@@ -22,7 +22,9 @@
                 <li>Reset Password</li>
             </ul>
             <p class="lead">
-                <a class="btn btn-primary" href="" target="_blank" role="button">Github Source Code</a>
+                <a class="btn btn-primary" href="https://github.com/jasminetracey/lara8auth" target="_blank" role="button">
+                    Github Source Code
+                </a>
             </p>
         </div>
     </div>

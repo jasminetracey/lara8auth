@@ -19,4 +19,6 @@ Route::get('/', function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('home', 'home')->name('home');
+
+    Route::view('profile','profile')->name('profile');
 });

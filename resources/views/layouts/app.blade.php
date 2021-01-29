@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <livewire:styles />
 </head>
 <body>
     <div id="app">
@@ -49,8 +51,11 @@
                                 </li>
                             @endif
                         @else
-                            <li class="nav-item">
+                            <li class="nav-item {{ request()->routeIs('home') ? 'active' : '' }}">
                                 <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
+                            </li>
+                            <li class="nav-item {{ request()->routeIs('profile') ? 'active' : '' }}">
+                                <a class="nav-link" href="{{ route('profile') }}">{{ __('Profile') }}</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -79,5 +84,8 @@
             @yield('content')
         </main>
     </div>
+
+    <livewire:scripts />
+
 </body>
 </html>
