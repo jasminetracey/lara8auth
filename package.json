@@ -20,6 +20,7 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "alpinejs": "^3.3.5",
         "bootstrap": "^4.5.2",
         "jquery": "^3.5.1",
         "popper.js": "^1.16.1"
